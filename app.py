@@ -44,7 +44,7 @@ if upload is not None:
 # #     bytes_data = upload.getvalue()
 # #     st.write(bytes_data)
 # #     imgpath=""
-#     Test=[]
+    Test=[]
 #     for file in File:
 #         imgpath=os.path.join(test_path,file)
         # if(temp=="test"):
