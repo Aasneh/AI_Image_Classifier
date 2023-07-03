@@ -5,7 +5,7 @@ import numpy as np
 # import cv2 as cv
 # import os
 # import PIL
-# from PIL import Image, ImageOps
+from PIL import Image, ImageOps
 # import pickle
 # import pathlib
 # import seaborn as sns
