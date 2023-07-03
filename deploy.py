@@ -1,23 +1,23 @@
-import pandas as pd
+# import pandas as pd
 import numpy as np
 import tensorflow as tf
-from matplotlib import pyplot as plt
-import cv2 as cv
-import os
-import PIL
+# from matplotlib import pyplot as plt
+# import cv2 as cv
+# import os
+# import PIL
 from PIL import Image, ImageOps
-import pickle
-import pathlib
-import seaborn as sns
+# import pickle
+# import pathlib
+# import seaborn as sns
 from tensorflow import keras
-from tensorflow.keras import datasets, layers, models
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.models import Model
-from tensorflow.keras.utils import to_categorical, plot_model
-from tensorflow.keras.layers import Input, Dense, LSTM, Embedding, Dropout, add
+# from tensorflow.keras import datasets, layers, models
+# from tensorflow.keras.preprocessing.image import load_img, img_to_array
+# from tensorflow.keras.preprocessing.text import Tokenizer
+# from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
+# from tensorflow.keras.preprocessing.sequence import pad_sequences
+# from tensorflow.keras.models import Model
+# from tensorflow.keras.utils import to_categorical, plot_model
+# from tensorflow.keras.layers import Input, Dense, LSTM, Embedding, Dropout, add
 import streamlit as st
 
 model = keras.models.load_model('./Model.h5')
