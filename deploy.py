@@ -5,11 +5,11 @@ import numpy as np
 # import cv2 as cv
 # import os
 # import PIL
-from PIL import Image, ImageOps
+# from PIL import Image, ImageOps
 # import pickle
 # import pathlib
 # import seaborn as sns
-from tensorflow import keras
+# from tensorflow import keras
 # from tensorflow.keras import datasets, layers, models
 # from tensorflow.keras.preprocessing.image import load_img, img_to_array
 # from tensorflow.keras.preprocessing.text import Tokenizer
@@ -20,7 +20,7 @@ from tensorflow import keras
 # from tensorflow.keras.layers import Input, Dense, LSTM, Embedding, Dropout, add
 import streamlit as st
 
-model = keras.models.load_model('./Model.h5')
+# model = keras.models.load_model('./Model.h5')
 final={0:'FAKE',1:'REAL'}
 pict_size=36
 
@@ -31,9 +31,9 @@ st.image("./model_plot.png")
 test_path="./Testing/"
 st.header("TEST IT YOURSELF :smile:")
 upload = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
-if upload is not None:
-    image_bytes = upload.read()
-    st.image(image_bytes, caption="Uploaded Image", use_column_width=True)
+# if upload is not None:
+#     image_bytes = upload.read()
+#     st.image(image_bytes, caption="Uploaded Image", use_column_width=True)
 #     with open(os.path.join(test_path,"test.jpg"),"wb") as f: 
 #       f.write(upload.getbuffer())    
 #     File=os.listdir(test_path)
@@ -56,18 +56,18 @@ if upload is not None:
 #     st.write(final[y_hat])
     
     ########################################################
-    Test=[]
-    image = Image.open(upload)
-    # new_img=cv.resize(image,(pict_size,pict_size))
-    image = ImageOps.fit(image,(pict_size,pict_size), Image.ANTIALIAS)
-    # image=image.resize((pict_size,pict_size))
-    new_img = np.array(image)
-    # img_array = img_array.resize((48,48),Image.ANTIALIAS)
-    # print(new_img.shape)
-    new_img=new_img/255
-    Test.append(new_img)
-    Test=np.array(Test)
-    y_pred=model.predict(Test)
-    y_hat=np.argmax(y_pred[0])
-    st.write(final[y_hat])
+    # Test=[]
+    # image = Image.open(upload)
+    # # new_img=cv.resize(image,(pict_size,pict_size))
+    # image = ImageOps.fit(image,(pict_size,pict_size), Image.ANTIALIAS)
+    # # image=image.resize((pict_size,pict_size))
+    # new_img = np.array(image)
+    # # img_array = img_array.resize((48,48),Image.ANTIALIAS)
+    # # print(new_img.shape)
+    # new_img=new_img/255
+    # Test.append(new_img)
+    # Test=np.array(Test)
+    # y_pred=model.predict(Test)
+    # y_hat=np.argmax(y_pred[0])
+    # st.write(final[y_hat])
        
