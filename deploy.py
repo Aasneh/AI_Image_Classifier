@@ -20,7 +20,7 @@ from tensorflow.keras import datasets, layers, models
 # from tensorflow.keras.layers import Input, Dense, LSTM, Embedding, Dropout, add
 import streamlit as st
 
-# model = keras.models.load_model('./Model.h5')
+model = keras.models.load_model('./Model.h5')
 final={0:'FAKE',1:'REAL'}
 pict_size=36
 
