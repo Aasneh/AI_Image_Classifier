@@ -1,6 +1,6 @@
 # import pandas as pd
 import numpy as np
-import tensorflow as tf
+# import tensorflow as tf
 # from matplotlib import pyplot as plt
 # import cv2 as cv
 # import os
@@ -31,8 +31,8 @@ st.image("./model_plot.png")
 test_path="./Testing/"
 st.header("TEST IT YOURSELF :smile:")
 upload = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
-# if upload is not None:
-#     image_bytes = upload.read()
+if upload is not None:
+    image_bytes = upload.read()
 #     st.image(image_bytes, caption="Uploaded Image", use_column_width=True)
 #     with open(os.path.join(test_path,"test.jpg"),"wb") as f: 
 #       f.write(upload.getbuffer())    
