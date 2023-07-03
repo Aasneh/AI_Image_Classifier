@@ -9,8 +9,8 @@ from PIL import Image, ImageOps
 # import pickle
 # import pathlib
 # import seaborn as sns
-# from tensorflow import keras
-# from tensorflow.keras import datasets, layers, models
+from tensorflow import keras
+from tensorflow.keras import datasets, layers, models
 # from tensorflow.keras.preprocessing.image import load_img, img_to_array
 # from tensorflow.keras.preprocessing.text import Tokenizer
 # from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
