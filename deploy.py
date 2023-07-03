@@ -56,19 +56,19 @@ if upload is not None:
 #     st.write(final[y_hat])
     
     ########################################################
-    # Test=[]
+    Test=[]
     image = Image.open(upload)
     st.image(image, caption="Uploaded Image", use_column_width=True)
-    # # new_img=cv.resize(image,(pict_size,pict_size))
-    # image = ImageOps.fit(image,(pict_size,pict_size), Image.ANTIALIAS)
-    # # image=image.resize((pict_size,pict_size))
-    # new_img = np.array(image)
-    # # img_array = img_array.resize((48,48),Image.ANTIALIAS)
-    # # print(new_img.shape)
-    # new_img=new_img/255
-    # Test.append(new_img)
-    # Test=np.array(Test)
-    # y_pred=model.predict(Test)
-    # y_hat=np.argmax(y_pred[0])
-    # st.write(final[y_hat])
+    # new_img=cv.resize(image,(pict_size,pict_size))
+    image = ImageOps.fit(image,(pict_size,pict_size), Image.ANTIALIAS)
+    # image=image.resize((pict_size,pict_size))
+    new_img = np.array(image)
+    # img_array = img_array.resize((48,48),Image.ANTIALIAS)
+    # print(new_img.shape)
+    new_img=new_img/255
+    Test.append(new_img)
+    Test=np.array(Test)
+    y_pred=model.predict(Test)
+    y_hat=np.argmax(y_pred[0])
+    st.write(final[y_hat])
        
