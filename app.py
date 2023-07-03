@@ -38,16 +38,18 @@ if upload is not None:
     st.image(image, caption="Uploaded Image", use_column_width=True)
     # with open(os.path.join(test_path,"test.jpg"),"wb") as f: 
     with open("test.jpg","wb") as f: 
-      f.write(upload.getbuffer())    
-    File=os.listdir(test_path)
-#     bytes_data = upload.getvalue()
-#     st.write(bytes_data)
-#     imgpath=""
-    Test=[]
-    for file in File:
-        imgpath=os.path.join(test_path,file)
+      f.write(upload.getbuffer())
+    
+#     File=os.listdir(test_path)
+# #     bytes_data = upload.getvalue()
+# #     st.write(bytes_data)
+# #     imgpath=""
+#     Test=[]
+#     for file in File:
+#         imgpath=os.path.join(test_path,file)
         # if(temp=="test"):
         #     imgpath=temp
+    imgpath="./test.jpg"
     img=cv.imread(imgpath)
     new_img=cv.resize(img,(pict_size,pict_size))
     new_img=new_img/255
