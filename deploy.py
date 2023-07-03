@@ -33,7 +33,7 @@ st.header("TEST IT YOURSELF :smile:")
 upload = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
 if upload is not None:
     image_bytes = upload.read()
-#     st.image(image_bytes, caption="Uploaded Image", use_column_width=True)
+    st.image(image_bytes, caption="Uploaded Image", use_column_width=True)
 #     with open(os.path.join(test_path,"test.jpg"),"wb") as f: 
 #       f.write(upload.getbuffer())    
 #     File=os.listdir(test_path)
