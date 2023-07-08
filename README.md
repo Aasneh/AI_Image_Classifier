@@ -21,7 +21,7 @@ Hence the model was trained on **6000 FAKE** and **6000 REAL** Images. It was te
 
 ### :page_with_curl:  DATA PREPROCESSING :
 Since all the images are not of the same sizes and shapes, we reshaped all of them to a uniform size of **(36x36)**. We have generated an array for each image of size
-**(3,36,36)** (RGB Images). Each **2-D matrix** handles individually the components of **red, blue, green** pixels.<br>
+**(36,36,3)** (RGB Images). Each **2-D matrix** handles individually the components of **red, blue, green** pixels.<br>
 Shuffled the dataset to ensure randomness.<br>
 
 ### :page_with_curl:  MODEL DESIGNING :
@@ -30,8 +30,17 @@ The main idea behind CNNs is that a local understanding of an image is good enou
 a CNN has just enough weights to look at a small patch of the image. 
 It’s like reading a book by using a magnifying glass; eventually, you read the whole page, but you look at only a small patch of the page at any given time.<br>
 Hence we decided to move forward with the **CNN type Architecture .**
+#### MAIN ARCHITECTURE:
+**Input_Shape=((36,36,3))**<br>
+**4 CNN LAYERS :** each having **filters**, **kernel size**=(3,3), **padding**, **relu Activation function**, **Max Pooling**, **Dropout** .<br>
+**3 FULLY CONNECTED DENSE LAYERS :** first two having **relu Activation function**, **Dropout** and last layer has **sigmoid Activation** .<br>
+<br>
+![Alt text](model_plot.png)
+<br>
 <br>
 
+**FILTERS :**
 
+Model Summary Available at <https://github.com/Aasneh/AI_Image_Classifier/blob/main/modelsummary.txt>
 
 https://aiimageclassifier-aasneh.streamlit.app/
