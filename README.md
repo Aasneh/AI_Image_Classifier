@@ -52,7 +52,7 @@ Hence we decided to move forward with the **CNN type Architecture .**
 Model Summary Available at <https://github.com/Aasneh/AI_Image_Classifier/blob/main/modelsummary.txt><br>
 
 ### :bar_chart:  RESULTS AND TESTING :
-**CLASSIFICATION REPORT**:
+**CLASSIFICATION REPORT**:<br>
 ![Alt text](SCORE.png)
 ![Alt text](Screenshot (80).png)
 ![Alt text](Screenshot (81).png)
