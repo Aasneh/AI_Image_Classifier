@@ -54,8 +54,12 @@ Model Summary Available at <https://github.com/Aasneh/AI_Image_Classifier/blob/m
 ### :bar_chart:  RESULTS AND TESTING :
 **CLASSIFICATION REPORT**:<br>
 ![Alt text](SCORE.png)
-![Alt text](Screenshot (80).png)
-![Alt text](Screenshot (81).png)
+<br>
+**AI GENERATED IMAGE:**<br>
+![Alt text](IMG1.png)
+<br>
+**REAL IMAGE:**<br>
+![Alt text](IMG2.png)
+<br>
+**Deployed on Streamlit. Check it out! :** <https://aiimageclassifier-aasneh.streamlit.app/>
 
-
-https://aiimageclassifier-aasneh.streamlit.app/
