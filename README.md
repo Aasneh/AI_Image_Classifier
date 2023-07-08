@@ -24,7 +24,7 @@ Since all the images are not of the same sizes and shapes, we reshaped all of th
 **(36,36,3)** (RGB Images). Each **2-D matrix** handles individually the components of **red, blue, green** pixels.<br>
 Shuffled the dataset to ensure randomness.<br>
 
-### :page_with_curl:  MODEL DESIGNING :
+### :pushpin:  MODEL DESIGNING :
 **Convolutional Neural Networks (CNNs)** is the most popular neural network model being used for Image Classification Problems.
 The main idea behind CNNs is that a local understanding of an image is good enough. Instead of a **fully connected network of weights from each pixel**, 
 a CNN has just enough weights to look at a small patch of the image. 
@@ -34,13 +34,28 @@ Hence we decided to move forward with the **CNN type Architecture .**
 **Input_Shape=((36,36,3))**<br>
 **4 CNN LAYERS :** each having **filters**, **kernel size**=(3,3), **padding**, **relu Activation function**, **Max Pooling**, **Dropout** .<br>
 **3 FULLY CONNECTED DENSE LAYERS :** first two having **relu Activation function**, **Dropout** and last layer has **sigmoid Activation** .<br>
+**OPTIMIZER : adams**<br>
+**loss : sparse_categorical_crossentropy**<br>
 <br>
 ![Alt text](model_plot.png)
 <br>
 <br>
 
-**FILTERS :**
+**FILTERS :** Filters help in extracting specific features from theinput data.<br>
+**Kernel_Size :** Kernel size determines the size of matrix which is used for extracting features via filter.<br>
+**Padding :** Padding virtually extends the matrix to cater to border values otherwise their influence is neglected.<br>
+**Max Pooling :** Max Pooling is a pooling operation that calculates the maximum value for patches of a feature map.<br>
+**Dropout :** Certain neurons in layers are dropped out to prevent overfitting.<br>
+**Sigmoid Function is used in last layer as the output is binary** .<br>
+**adams optimizer :** Adaptive Moment Estimation is the technique used to update the gradient descent.Used for sparse data.
+**sparse_categorical_crossentropy :** Used as the outputs belong to certain categories. <br>
+Model Summary Available at <https://github.com/Aasneh/AI_Image_Classifier/blob/main/modelsummary.txt><br>
 
-Model Summary Available at <https://github.com/Aasneh/AI_Image_Classifier/blob/main/modelsummary.txt>
+### :bar_chart:  RESULTS AND TESTING :
+**CLASSIFICATION REPORT**:
+![Alt text](SCORE.png)
+![Alt text](Screenshot (80).png)
+![Alt text](Screenshot (81).png)
+
 
 https://aiimageclassifier-aasneh.streamlit.app/
