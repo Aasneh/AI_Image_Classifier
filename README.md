@@ -16,6 +16,8 @@
 This Project is an attempt to to classify **AI Generated Images** and **Real Images**. In this growing world of AI a lot of images are changed and manipulated via AI techniques
 might lead to propogation of misinformation. Here I have made an effort to resolve such issues.
 # Demo :
+https://github.com/Aasneh/AI_Image_Classifier/assets/96459729/f2e393f4-f87a-47c1-a093-4922d350ec00
+
 
 # :floppy_disk:  Data Collection :
 * Using Selenium and Beautiful Soup modules of python I have webscraped some images from google images.<br>
